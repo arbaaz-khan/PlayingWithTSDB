@@ -1,0 +1,21 @@
+1. Creation of database
+CREATE DATABASE <database_name> [WITH [DURATION <duration>] [REPLICATION <n>] [SHARD DURATION <duration>] [NAME <retention-policy-name>]]
+
+Example:
+CREATE DATABASE cpu_monitoring
+
+2.  Delete Database
+DROP DATABASE <database_name>
+
+3. Drop the series
+DROP SERIES FROM <measurement_name[,measurement_name]> WHERE <tag_key>='<tag_value>'
+
+Example:
+DROP SERIES FROM weather
+DROP SERIES FROM wheather WHERE "location" = 'new york'
+
+4. Insert
+INSERT <measurement_name>,[<tag-key1>=<tag-value1>,<tag-key2>=<tag-value2>,<tag-key3>=<tag-value3>] <field-key1>=<field-value1>,<field-key2>=<field-value2>,<field-key3>=<field-value3> [<timestamp>]
+
+Example:
+INSERT computer,name=lenovo,ram=8gb,processor=intel_i7 temp="55c",mem_usage=4.6
