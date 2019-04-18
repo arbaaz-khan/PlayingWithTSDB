@@ -1,0 +1,13 @@
+There are many plugins available for InfluxDB.
+Telegraf, Chronograf, Kapacitor etc.
+Let's discuss about these plugins a little bit.
+
+1. Telegraf:
+It's an agent that collects and reports metrics and events. If used it can pull the data from the source that we configure it with and we have the option to filter out the specific data that we want to push to the database.
+We just need to edit it's configuration file according to our requirement and add the InfluxDB endpoint so that Telegraf can talk to the DB.
+
+2. Chronograf:
+It provides the interface for the InfluxDB database.
+
+3. Kapacitor:
+It provides a real-time streaming data processing engine.

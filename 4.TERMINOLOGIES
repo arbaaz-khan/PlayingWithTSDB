@@ -1,0 +1,20 @@
+*****************************************************************************************************************************************************************************************************
+SYNTAX OF INSERTING DATA(So that we can corelate with the terminologies):
+#####################################################################################################################################################################################################
+INSERT <measurement_name>,[<tag-key1>=<tag-value1>,<tag-key2>=<tag-value2>,<tag-key3>=<tag-value3>] <field-key1>=<field-value1>,<field-key2>=<field-value2>,<field-key3>=<field-value3> [<timestamp>]
+#####################################################################################################################################################################################################
+contents inside [] are optional.
+We will cover the syntax in details later.
+*****************************************************************************************************************************************************************************************************
+
+1. Measurement:
+Measurement name similar to table name in most of the other databases.
+
+2. Tags:
+Tags are optional,these contain metadata for the measurement.
+
+3. Fields:
+Fields contain the actual data that matters the most.
+
+4. Timestamps:
+Timestamps are UNIX timestamps. The minimum valid timestamp is -9223372036854775806 or 1677-09-21T00:12:43.145224194Z. The maximum valid timestamp is 9223372036854775806 or 2262-04-11T23:47:16.854775806Z. As mentioned above, by default, InfluxDB assumes that timestamps have nanosecond precision.

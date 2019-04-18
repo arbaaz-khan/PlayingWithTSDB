@@ -1,0 +1,8 @@
+1. For downloading InfluxDB we need to go to the following website:
+   https://docs.influxdata.com/influxdb/v1.7/introduction/downloading/
+
+2. Follow the instructions and click on the download page hyperlink.
+
+3. There would be multiple things available to download. Don't get overwhelmed and for the time being download only InfluxDB. We will be going through all the rest of the things in the next steps.
+
+4. You may be asked to register, simply provide the necessary details and download the latest InfluxDB stable version for the platform that you are using.
